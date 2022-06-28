@@ -1,6 +1,3 @@
-// https://www.better.dev/build-a-memory-matching-game-in-javascript
-//https://flaviocopes.com/how-to-shuffle-array-javascript/
-
 let popupfeld = document.querySelector('#popup');
 let tryagain = document.querySelector('#again');
 
