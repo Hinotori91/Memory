@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em/1.4em Arial;
+  list-style: none;
+}
+
+body {
+  background: #c4c4c4;
+}
+
+.deck {
+  display: flex;
+  flex-wrap: wrap;
+  width: 660px;
+  height: 680px;
+  background-color: rgb(56, 55, 55);
+  margin: 40px;
+  padding: 13px;
+}
+
+li{
+  width: 130px;
+  height: 130px;
+  box-shadow: 5px 2px 20px 0 rgba(0, 0, 0, 0.5);
+  margin: 13px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.canvas{
+  width: 80px;
+  height: 80px;
+  margin: 25px;
+  display: none;
+}
+
+.card{
+  background-image: url(../img/kartenruecken_blau.jpg);
+  background-size: cover;
+  margin: 13px;
+}
+
+.card_open {
+  background-color: #02b3e4;
+  cursor: default;
+}
+
+.deck .card_match {
+  cursor: default;
+  background: #016e08;
+}
+
+.deck .card.unmatched {
+  background: #e2043b;
+}
+
+
+#popup{
+  display: flex;
+  flex-direction: column;
+  z-index: 1000000;
+  position: absolute;
+  top: 48%;
+  left: 20%;
+  background-color: rgba(0, 0, 0, 0.483);
+  border-radius: 10px;
+  padding: 20px 60px;
+  color: beige;
+  display: none;
+}
+
+#again{
+  margin-top: 15px;
+  height: 25px;
+  width: 300px;
+}
