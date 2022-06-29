@@ -60,6 +60,7 @@ li{
 }
 
 .deck .card_unmatched {
+  cursor: default;
   background: #e2043b;
 }
 

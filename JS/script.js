@@ -36,6 +36,7 @@ for(let i = 0; i < cards.length; i++) {
           richtig(i);
           clicks = 0;
         }else{
+          nicht_richtig(i);
           setTimeout(() => {
             zudecken(i);
           }, 1000);
@@ -65,7 +66,9 @@ function aufdecken (i) {
 
 function zudecken(i) {
   karte.htmlElem.classList.remove('card_open');
+  karte.htmlElem.classList.remove('card_unmatched');
   objektKarten[i].htmlElem.classList.remove('card_open');
+  objektKarten[i].htmlElem.classList.remove('card_unmatched');
   karte.htmlElem.classList.add('card')
   objektKarten[i].htmlElem.classList.add('card');
   hideCanvas(i);
@@ -77,6 +80,15 @@ function richtig (i) {
   karte.htmlElem.classList.remove('card_open');
   karte.htmlElem.classList.add('card_match');
   showCanvas(i);
+  
+  console.log(objektKarten);
+}
+
+function nicht_richtig (i){
+      objektKarten[i].htmlElem.classList.remove('card_open');
+      objektKarten[i].htmlElem.classList.add('card_unmatched');
+      karte.htmlElem.classList.remove('card_open');
+      karte.htmlElem.classList.add('card_unmatched');
   
   console.log(objektKarten);
 }
