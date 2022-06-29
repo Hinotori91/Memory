@@ -7,6 +7,12 @@
 }
 
 body {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+
+  margin: 20px;
   background: #c4c4c4;
 }
 
@@ -14,9 +20,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 660px;
-  height: 680px;
+  /* height: 680px; */
+  /* height: 640px; */
   background-color: rgb(56, 55, 55);
-  margin: 40px;
+  margin: 20px 20px 0 20px;
   padding: 13px;
 }
 
@@ -52,7 +59,7 @@ li{
   background: #016e08;
 }
 
-.deck .card.unmatched {
+.deck .card_unmatched {
   background: #e2043b;
 }
 
