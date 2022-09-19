@@ -7,9 +7,9 @@
 }
 
 body {
-  display: flex; 
+  display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 
   margin: 20px;
@@ -27,7 +27,7 @@ body {
   padding: 13px;
 }
 
-li{
+li {
   width: 130px;
   height: 130px;
   box-shadow: 5px 2px 20px 0 rgba(0, 0, 0, 0.5);
@@ -36,14 +36,14 @@ li{
   cursor: pointer;
 }
 
-.canvas{
+.canvas {
   width: 80px;
   height: 80px;
   margin: 25px;
   display: none;
 }
 
-.card{
+.card {
   background-image: url(../img/kartenruecken_blau.jpg);
   background-size: cover;
   margin: 13px;
@@ -65,7 +65,7 @@ li{
 }
 
 
-#popup{
+#popup {
   display: flex;
   flex-direction: column;
   z-index: 1000000;
@@ -79,7 +79,7 @@ li{
   display: none;
 }
 
-#again{
+#again {
   margin-top: 15px;
   height: 25px;
   width: 300px;
