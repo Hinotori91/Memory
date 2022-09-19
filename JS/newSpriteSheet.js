@@ -165,13 +165,13 @@ export let MemoryBilder = [
 // Array mit 16 Random Zahlen ausgeben
 while (array.length < 16) {
   let r = Math.round(Math.random() * 24);
-  if (array.indexOf(r) == -1) {
+  if (array.indexOf(MemoryBilder[r]) == -1) {
     array.push(MemoryBilder[r]);
     array.push(MemoryBilder[r]);
   }
 }
 
-console.log('Original Array ', array);
+// console.log('Original Array ', array);
 export let shuffled = array.sort(() => Math.random() - 0.5);
 console.log('Shuffled Array ', shuffled);
 
@@ -185,8 +185,6 @@ img.onload = function () {
     let x = MemoryBilder[posIndex].posx;
     let y = MemoryBilder[posIndex].posy;
     i++;
-    // console.log('RandomZahlen: '+posIndex);
-    // console.log(MemoryBilder[posIndex].name);
 
     // Darstellung des Bildes
     ctx.drawImage(img, x, y);
