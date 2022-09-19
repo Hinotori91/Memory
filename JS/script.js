@@ -2,7 +2,7 @@ let popupfeld = document.querySelector('#popup');
 let tryagain = document.querySelector('#again');
 
 
-import { MemoryBilder } from './newSpriteSheet.js';
+// import { MemoryBilder } from './newSpriteSheet.js';
 import { shuffled, canvasAll } from './newSpriteSheet.js';
 
 
@@ -22,14 +22,12 @@ for (let i = 0; i < cards.length; i++) {
   objektKarten.push(obj);
 
   cards[i].addEventListener('click', e => {
-    let actCard = objektKarten.find(item => item.htmlElem == e.target);
-
     if (clicks < 2) {
       if (clicks < 1) {
         karte = objektKarten[i];
         aufdecken(i);
         clicks += 1;
-      } else {
+      } else if (objektKarten[i].htmlElem.classList != 'card_open') {
         aufdecken(i);
 
         if (karte.img.name === objektKarten[i].img.name) {
